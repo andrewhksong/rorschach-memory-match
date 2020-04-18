@@ -1,0 +1,70 @@
+body {
+    height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+} 
+
+aside div {
+    border-radius: 15px;
+}
+
+aside p {
+    color: white;
+    font-family: 'Baloo Tammudu 2', serif;
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+    text-shadow: 1px 1px 6px rgb(192,192,192)
+}
+
+.logo-container {
+    margin: auto;
+    height: fit-content;
+    justify-content: flex-start;
+}
+
+.stats-box {
+    border: 1px solid gray;
+}
+
+.card {
+    width: 12vw;
+    height: 12vw;
+    padding: 0px;
+    position: relative;
+    transition: 100ms linear;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, .2);
+    margin: 0.2rem;
+}
+
+.card-front, .card-back {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    border-radius: 5px;
+}
+
+p, h5 {
+    color: white;
+}
+
+.rorschach-logo {
+    max-width: 20vw;
+}
+
+.card-back {
+    background-image: url('../images/rorschach.jpeg');
+}
