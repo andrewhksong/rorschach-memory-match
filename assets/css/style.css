@@ -7,36 +7,13 @@ body {
 }
 
 header {
-    padding: 10px;
     width: 90%;
     height: fit-content;
     margin: auto;
     display: flex;
 } 
 
-/* header h1 {
-    margin: 0;
-    color: white;
-    font-family: 'Anton', serif;
-    font-size: 2.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-shadow: 1px 1px 6px rgb(192,192,192)
-}
-
-header p {
-    color: white;
-    font-family: 'Baloo Tammudu 2', serif;
-    font-size: 1.75rem;
-    margin-top: 2%;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 6px rgb(192,192,192)
-}  */
-
-/* aside div {
-    border: 1px solid gray;
+aside div {
     border-radius: 15px;
 }
 
@@ -47,38 +24,27 @@ aside p {
     margin: auto;
     text-align: center;
     text-shadow: 1px 1px 6px rgb(192,192,192)
-} */
+}
 
 .logo-container {
     margin: auto;
     height: fit-content;
-}
-
-.stats-container {
-    /* display: flex;
-    justify-content: flex-end;
-    width: 100%; */
+    justify-content: flex-start;
 }
 
 .stats-box {
-    width: 20%;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 3px 10px rgba(255, 255, 255, .2);
-    margin-left: 20px;
-    height: fit-content;
-}
-
-.stats {
-    border-radius: 5px;
-    text-align: center;
+    border: 1px solid gray;
 }
 
 .card {
+    width: 12vw;
+    height: 12vw;
+    padding: 0px;
     position: relative;
-    margin: 0.2rem auto;
-    border: 1px solid gray;
-    height: 30%;
+    transition: 100ms linear;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, .2);
+    margin: 0.2rem;
 }
 
 .card-front, .card-back {
@@ -88,6 +54,7 @@ aside p {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
+    border-radius: 5px;
 }
 
 p, h5 {
@@ -95,7 +62,9 @@ p, h5 {
 }
 
 .rorschach-logo {
-    display: block;
     max-width: 20vw;
-    height: auto;
+}
+
+.card-back {
+    background-image: url('../images/rorschach.jpeg');
 }
