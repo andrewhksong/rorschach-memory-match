@@ -3,6 +3,8 @@ let firstCardClicked
 let secondCardClicked
 let firstCardClasses
 let secondCardClasses
+let maxMatches = 9
+let matches = 0
 
 gameCards.addEventListener('click', handleClick)
 
@@ -24,6 +26,20 @@ function handleClick(event) {
         console.log('2nd class:', secondCardClasses);
         gameCards.removeEventListener('click', handleClick)
         if(firstCardClasses === secondCardClasses) {
+            matches++
+            console.log('matches:', matches)
+            if(matches === maxMatches) {
+                let body = document.body
+                let modalOverlay = document.createElement('div')
+                let modalContent = document.createElement('div')
+                let modalText = document.createElement('p')
+                modalOverlay.className = 'modal-overlay'
+                modalContent.className = 'modal-content'
+                modalText.textContent = `You've Won!`
+                body.prepend(modalOverlay)
+                modalOverlay.prepend(modalContent)
+                modalContent.prepend(modalText)
+            }
             firstCardClicked = null
             secondCardClicked = null
             gameCards.addEventListener('click', handleClick)

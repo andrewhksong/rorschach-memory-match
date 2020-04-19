@@ -144,3 +144,28 @@ p, h5 {
 .hidden {
     display: none;
 } 
+
+.modal-overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: black;
+    border: 5px white;
+    width: 50%;
+    height: 50%;
+}
+
+.modal-content > p {
+    display: flex;
+    justify-content: center;
+    margin-top: 125px;
+    color: white;
+    font-size: 25px;
+}
