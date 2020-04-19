@@ -8,7 +8,55 @@ let matches = 0
 let attempts = 0
 let gamesPlayed = 0
 
+let cards = [
+    'left-starter',
+    'right-starter',
+    'left-blood',
+    'right-blood',
+    'left-latency',
+    'right-latency',
+    'left-bat',
+    'right-bat',
+    'left-sexual',
+    'right-sexual',
+    'left-mother',
+    'right-mother',
+    'left-animal',
+    'right-animal',
+    'left-human',
+    'right-human',
+    'left-finale',
+    'right-finale'
+]
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    shuffleCards()
+})
+
 gameCards.addEventListener('click', handleClick)
+
+function shuffleCards() {
+    let currentIndex = cards.length
+    let temporaryValue
+    let randomIndex
+    while(0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex)
+        currentIndex -= 1
+        temporaryValue = cards[currentIndex]
+        cards[currentIndex] = cards[randomIndex]
+        cards[randomIndex] = temporaryValue
+    }
+    for(let index = 0; index < cards.length; index++) {
+        let cardContainer = document.createElement('div')
+        let cardFront = document.createElement('div')
+        let cardBack = document.createElement('div')
+        cardContainer.className = 'card col-2'
+        cardFront.className = `card-front ${cards[index]}`
+        cardBack.className = 'card-back'
+        cardContainer.append(cardFront, cardBack)
+        gameCards.append(cardContainer)
+    }
+}
 
 function handleClick(event) {
     if(event.target.className.indexOf('card-back') === -1) {
