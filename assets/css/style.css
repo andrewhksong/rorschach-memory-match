@@ -68,3 +68,79 @@ p, h5 {
 .card-back {
     background-image: url('../images/rorschach.jpeg');
 }
+
+.left-starter {
+    background-image: url('../images/left-starter.jpg');
+}
+
+.right-starter {
+    background-image: url('../images/right-starter.jpg');
+}
+
+.left-blood {
+    background-image: url('../images/left-blood.jpg');
+}
+
+.right-blood {
+    background-image: url('../images/right-blood.jpg');
+}
+
+.left-latency {
+    background-image: url('../images/left-latency.jpg');
+}
+
+.right-latency {
+    background-image: url('../images/right-latency.jpg');
+}
+
+.left-bat {
+    background-image: url('../images/left-bat.jpg');
+}   
+
+.right-bat {
+    background-image: url('../images/right-bat.jpg');
+}
+
+.left-sexual {
+    background-image: url('../images/left-sexual.jpg');
+}
+
+.right-sexual {
+    background-image: url('../images/right-sexual.jpg');
+}
+
+.left-mother {
+    background-image: url('../images/left-mother.jpg');
+}
+
+.right-mother {
+    background-image: url('../images/right-mother.jpg');
+}
+
+.left-animal {
+    background-image: url('../images/left-animal.jpg');
+}
+
+.right-animal {
+    background-image: url('../images/right-animal.jpg');
+}
+
+.left-human {
+    background-image: url('../images/left-human.jpg');
+}
+
+.right-human {
+    background-image: url('../images/right-human.jpg');
+}
+
+.left-finale {
+    background-image: url('../images/left-finale.jpg');
+}
+
+.right-finale {
+    background-image: url('../images/right-finale.jpg');
+}
+
+.hidden {
+    display: none;
+} 
