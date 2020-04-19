@@ -132,3 +132,15 @@ p, h5 {
 .right-human {
     background-image: url('../images/right-human.jpg');
 }
+
+.left-finale {
+    background-image: url('../images/left-finale.jpg');
+}
+
+.right-finale {
+    background-image: url('../images/right-finale.jpg');
+}
+
+.hidden {
+    display: none;
+} 
