@@ -3,7 +3,7 @@ let firstCardClicked
 let secondCardClicked
 let firstCardClasses
 let secondCardClasses
-let maxMatches = 2
+let maxMatches = 1
 let matches = 0
 let attempts = 0
 let gamesPlayed = 0
@@ -128,8 +128,8 @@ function resetGame() {
     resetButton.textContent = 'Start A New Challenge'
     body.prepend(modalOverlay)
     modalOverlay.prepend(modalContent)
-    modalContent.prepend(modalText)
     modalContent.prepend(resetButton)
+    modalContent.prepend(modalText)
     resetButton.addEventListener('click', () => {
         $(".modal-overlay").remove()
     });
