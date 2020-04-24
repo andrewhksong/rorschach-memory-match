@@ -41,13 +41,14 @@ aside p {
 }
 
 .card {
-    width: 8vw;
-    height: 8vw;
+    width: 150px;
+    height: 150px;
     padding: 0px;
     position: relative;
     cursor: pointer;
     box-shadow: 0px 3px 10px rgba(255, 255, 255, .2);
-    margin: 4px;
+    margin: 5px;
+    transition: 100ms linear;
 }
 
 .card:hover {
@@ -65,7 +66,7 @@ aside p {
     border-radius: 5px;
 }
 
-p {
+p, h1 {
     color: white;
 }
 
@@ -150,11 +151,21 @@ p {
     background-image: url('../images/right-finale.jpg');
 }
 
+.how-to-play {
+    background-image: url("../images/how-to-play.png");
+    height: 50%;
+    width: 75%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
 .hidden {
     display: none;
 } 
 
-.modal-overlay {
+.modal-overlay, .start-modal {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -169,6 +180,7 @@ p {
     border: 1px solid white;
     width: 50%;
     height: 50%;
+    background-color: black;
 }
 
 .modal-content > p {
@@ -189,22 +201,20 @@ p {
     font-family: 'Baloo Tammudu 2', serif;
     text-transform: uppercase;
     font-size: 20px;
-    margin-top: 19%;
+    margin-top: 210px;
     background-color: white;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    .card {
-        width: 10vw;
-        height: 10vw;
-        margin: 3px;
-    }
-
-    .modal-button {
-        margin-top: 26%;
-    }
-
-    .stats {
-        width: 15vw;
-    }
+.start-modal {
+    flex-wrap: wrap;
 }
+
+.modal-description {
+    margin-top: 100px;
+}
+
+.modal-description > p, h1 {
+    justify-content: center;
+    display: flex;
+}
+

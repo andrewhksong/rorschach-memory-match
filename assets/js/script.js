@@ -30,7 +30,8 @@ let cards = [
 ]
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    shuffleCards()
+    // shuffleCards()
+    startModal()
 })
 
 gameCards.addEventListener('click', handleClick)
@@ -147,4 +148,21 @@ function resetCards() {
     }
 }
 
-
+function startModal() {
+    let body = document.body
+    let startModal = document.createElement('div')
+    let modalDescription = document.createElement('div')
+    let modalHeader = document.createElement('h1')
+    let modalText = document.createElement('p')
+    let howToPlay = document.createElement('div')
+    modalHeader.textContent = "Click Anywhere To Begin!"
+    modalText.textContent = "Match the inkblots for a successful match."
+    startModal.className = "start-modal"
+    modalDescription.className = "modal-description"
+    howToPlay.className = "how-to-play"
+    body.prepend(startModal)
+    startModal.prepend(howToPlay)
+    startModal.prepend(modalDescription)
+    modalDescription.prepend(modalHeader)
+    modalDescription.prepend(modalText)
+}

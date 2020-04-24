@@ -54,6 +54,7 @@ main {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .row-1, .row-2 {
