@@ -74,12 +74,11 @@ p, h1 {
 }
 
 .rorschach-logo {
-    max-width: 30vw;
+    max-width: 65%;
 }
 
 .card-back {
     background-image: url('../images/back-card.jpg');
-    opacity: 0%;
 }
 
 .left-starter {

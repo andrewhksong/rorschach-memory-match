@@ -3,7 +3,7 @@ let firstCardClicked
 let secondCardClicked
 let firstCardClasses
 let secondCardClasses
-let maxMatches = 1
+let maxMatches = 9
 let matches = 0
 let attempts = 0
 let gamesPlayed = 0
@@ -125,7 +125,7 @@ function resetGame() {
     modalOverlay.className = 'modal-overlay'
     modalContent.className = 'modal-content'
     resetButton.className = 'modal-button'
-    modalText.textContent = `All Cards Matched!`
+    modalText.textContent = `Your accuracy of ${calculateAccuracy(attempts, matches)} is classified as ${classification()}.`
     resetButton.textContent = 'Reset Deck'
     body.prepend(modalOverlay)
     modalOverlay.prepend(modalContent)
@@ -139,7 +139,7 @@ function resetGame() {
     attempts = 0;
     gamesPlayed++;
     resetCards();
-    displayStats();
+    displayStats()
 }
 
 function resetCards() {
@@ -156,7 +156,7 @@ function startModal() {
     let modalText = document.createElement('p')
     let howToPlay = document.createElement('div')
     modalHeader.textContent = "Click Anywhere To Begin!"
-    modalText.textContent = "Match the inkblots for a successful match."
+    modalText.textContent = "Match the inkblots to increase your accuracy."
     startModal.className = "start-modal"
     modalDescription.className = "modal-description"
     howToPlay.className = "how-to-play"
@@ -168,4 +168,17 @@ function startModal() {
     startModal.addEventListener('click', () => {
         $(".start-modal").remove()
     })
+}
+
+function classification() {
+    let accuracy = parseInt(calculateAccuracy(attempts, matches));
+    if(accuracy > 0 && accuracy < 26) {
+        return 'passing'
+    } else if (accuracy > 25 && accuracy < 36) {
+        return 'passing easily'
+    } else if (accuracy > 35 && accuracy < 46) {
+        return 'almost perfect'
+    } else if (accuracy > 35 && accuracy < 101) {
+        return 'perfect'
+    }
 }
