@@ -103,8 +103,8 @@
         height: 30px;
     }
 
-    .modal-button {
-        margin-top: 45px;
+    .modal-content {
+        height: 85%
     }
     
     .modal-description {
