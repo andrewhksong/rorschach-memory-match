@@ -71,7 +71,7 @@
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3)and (orientation : portrait) {
     .card {
-        height: 275px;
+        height: 200px;
         width: 275px;
     }
 
@@ -94,7 +94,7 @@
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3)and (orientation : landscape) {
     .card {
-        height: 110px;
+        height: 90px;
         width: 125px;
     }
 
