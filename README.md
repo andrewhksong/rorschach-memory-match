@@ -1,5 +1,5 @@
 # rorschach-memory-match
-A JavaScript memory matching application themed off of the Rorschach psychological test. 
+A responsive, JavaScript memory matching application themed off of the Rorschach psychological test. 
 
 # Technologies Used
 - JavaScript
@@ -34,3 +34,9 @@ Link: https://rorschach.andrewsong.org/
   cd rorschach-memory-match
   ```
 2. View the application by opening ```index.html``` in your browser.
+
+#### Mobile Responsive
+- Desktop (Roughly 1900px by 950px)
+- iPad - Portrait & Landscape
+- iPhone 6/7/8 - Portrait & Landscape
+- iPhone X - Portrait & Landscape
