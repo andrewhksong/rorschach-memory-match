@@ -3,7 +3,7 @@ let firstCardClicked
 let secondCardClicked
 let firstCardClasses
 let secondCardClasses
-let maxMatches = 9
+let maxMatches = 1
 let matches = 0
 let attempts = 0
 let gamesPlayed = 0
