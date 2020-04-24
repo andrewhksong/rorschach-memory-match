@@ -68,6 +68,9 @@ aside p {
 
 p, h1 {
     color: white;
+    font-family: 'Baloo Tammudu 2', serif;
+    justify-content: center;
+    display: flex;
 }
 
 .rorschach-logo {
@@ -173,7 +176,7 @@ p, h1 {
     height: 100vh;
     width: 100%;
     z-index: 1;
-    background: rgba(0, 0, 0, .75);
+    background: rgba(0, 0, 0, .95);
 }
 
 .modal-content {
@@ -184,10 +187,7 @@ p, h1 {
 }
 
 .modal-content > p {
-    display: flex;
-    justify-content: center;
     margin-top: 125px;
-    font-family: 'Baloo Tammudu 2', serif;
     color: white;
     font-size: 25px;
 }
@@ -210,11 +210,8 @@ p, h1 {
 }
 
 .modal-description {
+    width: 100%;
     margin-top: 100px;
 }
 
-.modal-description > p, h1 {
-    justify-content: center;
-    display: flex;
-}
 

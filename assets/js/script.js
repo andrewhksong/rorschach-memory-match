@@ -30,8 +30,8 @@ let cards = [
 ]
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    // shuffleCards()
     startModal()
+    shuffleCards()
 })
 
 gameCards.addEventListener('click', handleClick)
@@ -165,4 +165,7 @@ function startModal() {
     startModal.prepend(modalDescription)
     modalDescription.prepend(modalHeader)
     modalDescription.prepend(modalText)
+    startModal.addEventListener('click', () => {
+        $(".start-modal").remove()
+    })
 }
