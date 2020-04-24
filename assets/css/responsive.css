@@ -15,6 +15,10 @@
     .stats {
         width: 150px;
     }
+
+    .modal-description {
+        margin-top: 800px;
+    }
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
@@ -29,6 +33,10 @@
 
     .modal-button {
         margin-top: 45px;
+    }
+    
+    .modal-description {
+        margin-top: 0px;
     }
 }
 
@@ -45,6 +53,10 @@
     .modal-content {
         height: 36%;
     }
+
+    .modal-description {
+        margin-top: 550px;
+    }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
@@ -54,5 +66,48 @@
 
     .modal-button {
         margin-top: 135px;
+    }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3)and (orientation : portrait) {
+    .card {
+        height: 275px;
+        width: 275px;
+    }
+
+    .row-1 {
+        height: 200px;
+    }
+
+    .modal-content {
+        height: 23%;
+    }
+
+    .stats {
+        width: 175px;
+    }
+
+    .modal-description {
+        margin-top: 1000px;
+    }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3)and (orientation : landscape) {
+    .card {
+        height: 110px;
+        width: 125px;
+    }
+
+    .stats {
+        width: 175px;
+        height: 30px;
+    }
+
+    .modal-button {
+        margin-top: 45px;
+    }
+    
+    .modal-description {
+        margin-top: 0px;
     }
 }
