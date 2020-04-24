@@ -1,0 +1,58 @@
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+    .card {
+        height: 225px;
+        width: 250px;
+    }
+
+    .row-1 {
+        height: 200px;
+    }
+
+    .modal-content {
+        height: 27%;
+    }
+
+    .stats {
+        width: 150px;
+    }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
+    .card {
+        height: 135px;
+        width: 135px;
+    }
+
+    .stats {
+        width: 175px;
+    }
+
+    .modal-button {
+        margin-top: 45px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .stats {
+        width: 175px;
+    }
+
+    .card {
+        width: 250px;
+        height: 175px;
+    }
+
+    .modal-content {
+        height: 36%;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .stats {
+        width: 175px;
+    }
+
+    .modal-button {
+        margin-top: 135px;
+    }
+}

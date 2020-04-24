@@ -30,6 +30,7 @@ let cards = [
 ]
 
 document.addEventListener('DOMContentLoaded', (event) => {
+    startModal()
     shuffleCards()
 })
 
@@ -124,14 +125,15 @@ function resetGame() {
     modalOverlay.className = 'modal-overlay'
     modalContent.className = 'modal-content'
     resetButton.className = 'modal-button'
-    modalText.textContent = `You've Won!`
-    resetButton.textContent = 'Start A New Challenge'
+    modalText.textContent = `All Cards Matched!`
+    resetButton.textContent = 'Reset Deck'
     body.prepend(modalOverlay)
     modalOverlay.prepend(modalContent)
     modalContent.prepend(resetButton)
     modalContent.prepend(modalText)
     resetButton.addEventListener('click', () => {
         $(".modal-overlay").remove()
+        shuffleCards()
     });
     matches = 0;
     attempts = 0;
@@ -141,10 +143,29 @@ function resetGame() {
 }
 
 function resetCards() {
-    var hiddenCards = document.querySelectorAll('.card-back');
-    for (var listItem = 0; listItem < hiddenCards.length; listItem++) {
-        hiddenCards[listItem].classList.remove('hidden');
+    for(let index = 0; index < cards.length; index++) {
+        $(".card").remove()
     }
 }
 
-
+function startModal() {
+    let body = document.body
+    let startModal = document.createElement('div')
+    let modalDescription = document.createElement('div')
+    let modalHeader = document.createElement('h1')
+    let modalText = document.createElement('p')
+    let howToPlay = document.createElement('div')
+    modalHeader.textContent = "Click Anywhere To Begin!"
+    modalText.textContent = "Match the inkblots for a successful match."
+    startModal.className = "start-modal"
+    modalDescription.className = "modal-description"
+    howToPlay.className = "how-to-play"
+    body.prepend(startModal)
+    startModal.prepend(howToPlay)
+    startModal.prepend(modalDescription)
+    modalDescription.prepend(modalHeader)
+    modalDescription.prepend(modalText)
+    startModal.addEventListener('click', () => {
+        $(".start-modal").remove()
+    })
+}

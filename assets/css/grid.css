@@ -50,10 +50,11 @@ aside {
 
 main {
     height: 100%;
-    max-width: 90%;
+    max-width: 96%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .row-1, .row-2 {

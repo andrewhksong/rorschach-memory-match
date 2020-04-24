@@ -6,6 +6,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: black;
 }
 
 header {
@@ -40,13 +41,14 @@ aside p {
 }
 
 .card {
-    width: 8vw;
-    height: 8vw;
+    width: 150px;
+    height: 150px;
     padding: 0px;
     position: relative;
     cursor: pointer;
     box-shadow: 0px 3px 10px rgba(255, 255, 255, .2);
-    margin: 1vw;
+    margin: 5px;
+    transition: 100ms linear;
 }
 
 .card:hover {
@@ -64,8 +66,11 @@ aside p {
     border-radius: 5px;
 }
 
-p {
+p, h1 {
     color: white;
+    font-family: 'Baloo Tammudu 2', serif;
+    justify-content: center;
+    display: flex;
 }
 
 .rorschach-logo {
@@ -149,11 +154,21 @@ p {
     background-image: url('../images/right-finale.jpg');
 }
 
+.how-to-play {
+    background-image: url("../images/how-to-play.png");
+    height: 50%;
+    width: 75%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
 .hidden {
     display: none;
 } 
 
-.modal-overlay {
+.modal-overlay, .start-modal {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -161,31 +176,42 @@ p {
     height: 100vh;
     width: 100%;
     z-index: 1;
+    background: rgba(0, 0, 0, .95);
 }
 
 .modal-content {
-    background-color: black;
-    border: 5px white;
+    border: 1px solid white;
     width: 50%;
     height: 50%;
+    background-color: black;
 }
 
 .modal-content > p {
-    display: flex;
-    justify-content: center;
     margin-top: 125px;
-    font-family: 'Baloo Tammudu 2', serif;
     color: white;
     font-size: 25px;
 }
 
 .modal-button {
-    /* display: flex; */
+    display: flex;
     margin: auto;
-    width: 100%;
+    width: 95%;
     height: 15%;
+    justify-content: center;
+    font-family: 'Baloo Tammudu 2', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 210px;
+    background-color: white;
 }
 
-.modal-button > p {
-    font-family: 'Baloo Tammudu 2', serif;
+.start-modal {
+    flex-wrap: wrap;
 }
+
+.modal-description {
+    width: 100%;
+    margin-top: 100px;
+}
+
+
