@@ -175,7 +175,6 @@ p, h1 {
     width: 100%;
     z-index: 1;
     background: rgba(0, 0, 0, .95);
-    cursor: pointer;
 }
 
 .modal-content {
@@ -202,10 +201,12 @@ p, h1 {
     font-size: 20px;
     margin-top: 210px;
     background-color: white;
+    cursor: pointer;
 }
 
 .start-modal {
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .modal-description {

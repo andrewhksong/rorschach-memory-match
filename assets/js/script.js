@@ -156,7 +156,8 @@ function startModal() {
     let modalText = document.createElement('p')
     let howToPlay = document.createElement('div')
     modalHeader.textContent = "Click Anywhere To Begin!"
-    modalText.textContent = "Match the inkblots to increase your accuracy."
+    modalText.textContent = "Cards will be ramdomized on click."
+    modalText.style.color = 'red'
     startModal.className = "start-modal"
     modalDescription.className = "modal-description"
     howToPlay.className = "how-to-play"
