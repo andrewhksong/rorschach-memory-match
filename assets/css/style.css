@@ -45,15 +45,14 @@ aside p {
     height: 150px;
     padding: 0px;
     position: relative;
-    cursor: pointer;
     box-shadow: 0px 3px 10px rgba(255, 255, 255, .2);
     margin: 5px;
     transition: 100ms linear;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.card-back:hover {
     box-shadow: 0px 5px 30px rgba(255,255,255,.5);
+    cursor: pointer;
 }
 
 .card-front, .card-back {
@@ -79,6 +78,7 @@ p, h1 {
 
 .card-back {
     background-image: url('../images/back-card.jpg');
+    opacity: 5%;
 }
 
 .left-starter {
@@ -176,6 +176,7 @@ p, h1 {
     width: 100%;
     z-index: 1;
     background: rgba(0, 0, 0, .95);
+    cursor: pointer;
 }
 
 .modal-content {
